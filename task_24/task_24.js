@@ -30,10 +30,10 @@ console.log("false || False ? false");
 console.log(false || false);
 console.log("True || false ? True");
 console.log(true || false);
-var array = [1, 2, 3, 4, 5];
+var arr = [1, 2, 3, 4, 5];
 // Test whether an item is in an array
 console.log("Is 2 is in an array? True");
-console.log(array.find(2) ? true : false);
+console.log(arr.find(function (num) { return num == 2; }) ? true : false);
 // Test whether an item is not in an array
 console.log("Is 8 is in an array? false");
-console.log(array.find(8) ? true : false);
+console.log(arr.find(function (num) { return num == 8; }) ? true : false);
